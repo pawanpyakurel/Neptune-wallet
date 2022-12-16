@@ -1,3 +1,4 @@
+import { Footer } from 'components/Footer/Footer';
 import Head from 'next/head';
 import React from 'react';
 import { ChildrenProps } from 'static/types/GenericTypes';
@@ -6,7 +7,7 @@ interface AppLayoutProps extends ChildrenProps {}
 
 export const AppLayout = ({ children }: AppLayoutProps) => {
   return (
-    <div>
+    <div className='root'>
       <Head>
         <title>Neptune - Test App</title>
         <meta
@@ -19,6 +20,7 @@ export const AppLayout = ({ children }: AppLayoutProps) => {
         />
       </Head>
       {children}
+      <Footer />
     </div>
   );
 };
