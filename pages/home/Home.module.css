@@ -8,9 +8,6 @@
   height: fit-content;
 }
 
-.container {
-}
-
 @media only screen and (max-width: 300px) {
   .card {
     padding: 1rem;

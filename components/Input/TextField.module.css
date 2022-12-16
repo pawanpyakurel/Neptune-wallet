@@ -5,12 +5,14 @@
   outline: none;
   min-width: 3rem;
   font-size: 1rem;
+  border-right: 2px solid #a0a0a0;
+  padding-right: 0.5rem;
 }
 
 .input_box {
   border: 2px solid #a0a0a0;
   border-radius: 6px;
-  padding: 0.5rem;
+  padding: 0.7rem;
   min-width: 50vw;
 }
 
@@ -20,7 +22,7 @@
 }
 
 .label {
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 
 @media only screen and (min-width: 900px) {

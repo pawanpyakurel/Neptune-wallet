@@ -45,7 +45,7 @@ const Home = ({}: Props) => {
 
   return (
     <div className='root'>
-      <h1 className='text-center'>currency converter</h1>
+      <h1 className='text-center'>Currency Converter</h1>
       <div className={`${styles.container} flex-center flex-1`}>
         <div className={`${styles.card} flex-center`}>
           <form className='flex-1'>
