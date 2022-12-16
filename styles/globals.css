@@ -32,6 +32,16 @@ a {
 h1 {
   font-size: 1.5rem;
 }
+a {
+  text-decoration: underline;
+  color: #77adeb;
+  font-size: 20;
+  font-weight: bold;
+}
+
+.colum {
+  flex-direction: column;
+}
 
 .flex-center {
   display: flex;
@@ -57,4 +67,8 @@ h1 {
 
 .padding {
   padding: 1rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
