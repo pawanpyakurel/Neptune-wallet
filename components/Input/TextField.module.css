@@ -17,8 +17,8 @@
 }
 
 .input_box:has(.input:focus) {
-  /* border-color: #77adeb; */
-  border-color: #7386b4;
+  border-color: #77adeb;
+  /* border-color: #7386b4; */
 }
 
 .label {
