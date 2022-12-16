@@ -2,6 +2,7 @@ import { TextField } from 'components/Input/TextField';
 import React, { useCallback, useMemo, useState } from 'react';
 import exchange from 'static/_mock/nepExchangeRate.json';
 import styles from 'pages/home/Home.module.css';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -45,9 +46,10 @@ const Home = ({}: Props) => {
 
   return (
     <div className='root'>
-      <h1 className='text-center'>Currency Converter</h1>
+      <h1 className='text-center'>Neptune Mutual</h1>
       <div className={`${styles.container} flex-center flex-1`}>
-        <div className={`${styles.card} flex-center`}>
+        <div className={`${styles.card} flex-center colum`}>
+          <h2 className='text-center mt-0 padding'>Currency Converter</h2>
           <form className='flex-1'>
             <TextField
               placeholder='Enter NEP'
@@ -67,6 +69,18 @@ const Home = ({}: Props) => {
               value={getBusdValue}
             />
           </form>
+
+          <Link
+            href='/about'
+            legacyBehavior
+          >
+            <a
+              id='link'
+              className='padding'
+            >
+              Check Walet Details
+            </a>
+          </Link>
         </div>
       </div>
     </div>
