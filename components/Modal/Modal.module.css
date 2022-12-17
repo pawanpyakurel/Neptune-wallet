@@ -1,0 +1,92 @@
+.root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f2029bf;
+}
+
+.dialog_trigger,
+.dialog_action {
+  border: 1px solid #9a9a9a33;
+  background: #ffffffc4;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: block;
+  transition: all 150ms ease-out;
+  transform: translateY(0px);
+}
+.dialog_trigger:matches(:hover, :focus),
+.dialog_action:matches(:hover, :focus) {
+  outline: 0;
+  transform: translateY(-5px);
+  transition: all 100ms ease-in;
+  box-shadow: #64646f33 0rem 0rem 3rem 0rem;
+}
+
+.dialog_trigger:matches(:active, ),
+.dialog_action:matches(:active, ) {
+  transform: translateY(-3px);
+}
+
+.dialog_trigger:hover,
+.dialog_action:hover {
+  border: 1px solid #9a9a9a33;
+  background: #ffffffc4;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: block;
+  transition: all 150ms ease-out;
+  transform: translateY(0px);
+}
+
+.dialog {
+  background: #ffffffc4;
+  width: 70%;
+  position: absolute;
+  left: calc(50% - 35%); /* half of the container width - 70% */
+  top: 0;
+  bottom: 50%;
+  padding: 30px;
+  box-shadow: #64646f33 0rem 0rem 3rem 0rem;
+  border: 1px solid #9a9a9a33;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 250ms ease-in;
+  height: fit-content;
+  border-radius: 0.7rem;
+}
+
+.dialog_active {
+  bottom: 0;
+  margin: auto;
+
+  visibility: visible;
+  opacity: 1;
+  transition: all 250ms ease-out;
+}
+
+.dialog_close {
+  font-size: 2rem;
+  line-height: 2rem;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  padding: 15px;
+  transition: color 150ms ease;
+}
+
+.dialog_close:hover {
+  color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .dialog {
+    width: 90%;
+    left: calc(50% - 45%); /* half of the container width - 90% */
+  }
+}
