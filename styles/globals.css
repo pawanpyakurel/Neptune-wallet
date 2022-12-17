@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
 html,
 body {
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #1f2029;
+  background-color: #fff;
+  overflow: hidden;
+  background: url('https://assets.codepen.io/1462889/back-page.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 101%;
 }
 footer {
   padding: 1rem 0;
   border-top: 1px solid #eaeaea;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -35,8 +42,12 @@ h1 {
 a {
   text-decoration: underline;
   color: #77adeb;
-  font-size: 20;
+  font-size: 18px;
   font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .colum {
@@ -71,4 +82,19 @@ a {
 
 .mt-0 {
   margin-top: 0px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
