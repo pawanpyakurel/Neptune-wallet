@@ -137,7 +137,6 @@ export const Wallet = ({}: WalletProps) => {
           >
             Disconnect
           </Button>
-
           <Button onClick={() => setOpenDetails(false)}>Cancel</Button>
         </div>
       </Modal>
