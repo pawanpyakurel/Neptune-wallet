@@ -5,6 +5,13 @@
   width: 100vw;
   height: 100vh;
   background-color: #1f2029bf;
+  transition: all 50ms;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dialog_trigger,
@@ -44,10 +51,10 @@
 }
 
 .dialog {
-  background: #ffffffc4;
+  background: #dcdcdc;
   width: 70%;
   position: absolute;
-  left: calc(50% - 35%); /* half of the container width - 70% */
+  left: calc(50% - 15rem);
   top: 0;
   bottom: 50%;
   padding: 30px;
@@ -58,6 +65,7 @@
   transition: all 250ms ease-in;
   height: fit-content;
   border-radius: 0.7rem;
+  max-width: 30rem;
 }
 
 .dialog_active {
@@ -70,18 +78,18 @@
 }
 
 .dialog_close {
-  font-size: 2rem;
-  line-height: 2rem;
-  position: absolute;
-  right: 15px;
-  top: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   cursor: pointer;
-  padding: 15px;
+  /* padding: 15px; */
   transition: color 150ms ease;
 }
 
 .dialog_close:hover {
   color: green;
+}
+.body {
+  padding: 1rem 0rem;
 }
 
 @media only screen and (max-width: 600px) {
