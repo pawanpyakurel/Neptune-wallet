@@ -2,8 +2,9 @@ import { TextField } from 'components/Input/TextField';
 import React, { useCallback, useMemo, useState } from 'react';
 import exchange from 'static/_mock/nepExchangeRate.json';
 import styles from 'pages/home/Home.module.css';
-import Link from 'next/link';
 import { Wallet } from 'Container/Wallet/Wallet';
+import { Card } from 'components/Card/Card';
+import Image from 'next/image';
 
 type Props = {};
 
@@ -47,10 +48,16 @@ const Home = ({}: Props) => {
 
   return (
     <div className='root'>
-      <h1 className='text-center'>Neptune Mutual</h1>
+      <Image
+        src={'/neptune-mutual-logo.png'}
+        className='imagecomonentcard'
+        alt={'Neptune'}
+        width={1280}
+        height={208}
+        layout='responsive'
+      />
       <div className={`${styles.container} flex-center flex-1`}>
-        <div className={`${styles.card} flex-center column`}>
-          <h2 className='text-center mt-0 padding'>Currency Converter</h2>
+        <Card>
           <form className='flex-1'>
             <TextField
               placeholder='Enter NEP'
@@ -71,7 +78,7 @@ const Home = ({}: Props) => {
             />
           </form>
           <Wallet />
-        </div>
+        </Card>
       </div>
     </div>
   );

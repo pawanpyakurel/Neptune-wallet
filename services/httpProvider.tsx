@@ -19,7 +19,7 @@ export const web3 = async ({ connected, account }: web3Props) => {
   const getBalance = async () =>
     await httpProvider.eth.getBalance(account ?? '', function (err, result) {
       if (err) {
-        console.log(err);
+        console.error(err);
       } else {
         balance = Web3.utils.fromWei(result, 'ether');
       }
@@ -28,7 +28,7 @@ export const web3 = async ({ connected, account }: web3Props) => {
   const getBlockNumber = async () =>
     await httpProvider.eth.getBlockNumber(function (err, result) {
       if (err) {
-        console.log(err);
+        console.error(err);
       } else {
         blockNo = result;
       }

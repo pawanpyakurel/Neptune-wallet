@@ -16,7 +16,7 @@ export const Modal = ({ isOpen = false, onClose, children }: ModalProps) => {
         } flex column`}
       >
         <header className={styles.header}>
-          <h2 className={styles.dialog_title}>Wallet Details</h2>
+          <h2 className={`${styles.dialog_title} mt-0`}>Wallet Details</h2>
           <span
             className={styles.dialog_close}
             onClick={onClose}

@@ -11,6 +11,7 @@ import React, {
 } from 'react';
 import { injected } from 'services/connectors';
 import { web3 } from 'services/httpProvider';
+import { GLOBAL_CONSTANT } from 'static/constants/GlobalConstant';
 import { useLocalStorage } from 'utils/hooks/useLocalStore';
 
 type WalletProps = {};
@@ -18,6 +19,11 @@ type WalletProps = {};
 export const Wallet = ({}: WalletProps) => {
   const { active, account, activate, deactivate, chainId, setError, error } =
     useWeb3React();
+
+  const [openDialog, setOpenDialog] = useState(false);
+  const [openDetails, setOpenDetails] = useState(false);
+
+  const [data, setData]: any[] = useState([GLOBAL_CONSTANT.TABLE_DATA]);
 
   const [isWalletConnected, setIsWalletConnected] = useLocalStorage({
     key: 'isWalletConnected',
@@ -50,24 +56,6 @@ export const Wallet = ({}: WalletProps) => {
     }
   }
 
-  const [openDialog, setOpenDialog] = useState(false);
-  const [openDetails, setOpenDetails] = useState(false);
-
-  const [data, setData]: any[] = useState([
-    {
-      dataKey: 'account',
-      value: '',
-    },
-    {
-      dataKey: 'chain ID',
-      value: chainId,
-    },
-    {
-      dataKey: 'balance',
-      value: '',
-    },
-    { dataKey: 'block no', value: '' },
-  ]);
   useEffect(() => {
     const connectWalletOnPageLoad = async () => {
       if (isWalletConnected) {
