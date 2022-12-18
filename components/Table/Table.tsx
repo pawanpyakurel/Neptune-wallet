@@ -26,7 +26,10 @@ export const Table = ({ cell }: TableProps) => {
             <tr key={index}>
               <td>{item.dataKey}</td>
               <td className='font-b'>
-                {textEclipseCenter({ text: item.value, minLength: 10 })}
+                {textEclipseCenter({
+                  text: !!item.value ? item.value : 'Loading...',
+                  minLength: 15,
+                })}
               </td>
             </tr>
           );
