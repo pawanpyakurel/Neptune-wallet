@@ -34,6 +34,11 @@ tfoot {
 
 td {
   padding: 0.5rem;
+  text-transform: capitalize;
+}
+
+tr:nth-of-type(even) {
+  background-color: #eeeeee;
 }
 * {
   box-sizing: border-box;
@@ -138,4 +143,8 @@ button:hover {
 
 .color-red {
   color: var(--red);
+}
+
+.font-b {
+  font-weight: bold;
 }
