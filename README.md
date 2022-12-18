@@ -12,4 +12,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## screen shoots
 
-<img src="/Neptune-wallet/assets/converter.md.png" alt="Screen shoot 1" title="Converter screen">
+<img src="/Neptune-wallet/blob/assets/converter.md.png" alt="Screen shoot 1" title="Converter screen">
