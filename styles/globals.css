@@ -39,6 +39,14 @@ footer {
 h1 {
   font-size: 1.5rem;
 }
+h2 {
+  font-size: 1.3rem;
+  margin: 0.1rem 0rem;
+}
+h4 {
+  font-weight: 400;
+  margin: 0.3rem 0rem;
+}
 a {
   text-decoration: underline;
   color: #77adeb;
@@ -46,12 +54,16 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+a:hover,
+button:hover {
   cursor: pointer;
 }
 
-.colum {
+.column {
   flex-direction: column;
+}
+.flex {
+  display: flex;
 }
 
 .flex-center {
@@ -97,4 +109,12 @@ a:hover {
 
 .visible {
   visibility: visible;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.color-red {
+  color: var(--red);
 }
