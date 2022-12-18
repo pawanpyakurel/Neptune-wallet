@@ -1,0 +1,16 @@
+.card {
+  box-shadow: #64646f33 0rem 0rem 3rem 0rem;
+  border: 1px solid #9a9a9a33;
+  border-radius: 0.7rem;
+  padding: 2rem;
+  max-width: 30rem;
+  margin: 1.5rem;
+  height: fit-content;
+  background: #ffffffc4;
+}
+
+@media only screen and (max-width: 300px) {
+  .card {
+    padding: 1rem;
+  }
+}

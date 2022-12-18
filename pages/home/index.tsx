@@ -3,6 +3,7 @@ import React, { useCallback, useMemo, useState } from 'react';
 import exchange from 'static/_mock/nepExchangeRate.json';
 import styles from 'pages/home/Home.module.css';
 import { Wallet } from 'Container/Wallet/Wallet';
+import { Card } from 'components/Card/Card';
 
 type Props = {};
 
@@ -48,8 +49,7 @@ const Home = ({}: Props) => {
     <div className='root'>
       <h1 className='text-center'>Neptune Mutual</h1>
       <div className={`${styles.container} flex-center flex-1`}>
-        <div className={`${styles.card} flex-center column`}>
-          <h2 className='text-center mt-0 padding'>Currency Converter</h2>
+        <Card>
           <form className='flex-1'>
             <TextField
               placeholder='Enter NEP'
@@ -70,7 +70,7 @@ const Home = ({}: Props) => {
             />
           </form>
           <Wallet />
-        </div>
+        </Card>
       </div>
     </div>
   );
