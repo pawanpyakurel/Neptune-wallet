@@ -1,0 +1,21 @@
+.button {
+  border: none;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+
+  border-radius: 6px;
+  color: var(--white);
+}
+
+.button-primary {
+  background-color: var(--primary);
+}
+.button-danger {
+  background-color: var(--red);
+}
+.button-basic {
+  background-color: var(--basic);
+  color: var(--black);
+}

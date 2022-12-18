@@ -7,6 +7,8 @@
   font-size: 1rem;
   border-right: 2px solid #a0a0a0;
   padding-right: 0.5rem;
+  background: unset;
+  font-family: 'Poppins', sans-serif;
 }
 
 .input_box {
