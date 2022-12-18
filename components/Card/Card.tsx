@@ -6,9 +6,9 @@ interface CardProps extends ChildrenProps {
   title?: string;
 }
 
-export const Card = ({ children, title }: CardProps) => (
+export const Card = ({ children, title = 'Currency Converter' }: CardProps) => (
   <div className={`${styles.card} flex-center column`}>
-    <h2 className='text-center mt-0 padding'>{title}</h2>
+    <h2 className='text-center mt-0 padding '>{title}</h2>
     {children}
   </div>
 );

@@ -67,7 +67,7 @@ h1 {
 }
 h2 {
   font-size: 1.3rem;
-  margin: 0.1rem 0rem;
+  margin: 1rem 0rem;
 }
 h4 {
   font-weight: 400;
@@ -117,6 +117,12 @@ button:hover {
 .padding {
   padding: 1rem;
 }
+.pb-0 {
+  padding-bottom: 0px;
+}
+.pt-0 {
+  padding-top: 0rem;
+}
 
 .mt-0 {
   margin-top: 0px;
@@ -147,4 +153,11 @@ button:hover {
 
 .font-b {
   font-weight: bold;
+}
+
+.imagecomonentcard {
+  max-width: 500px;
+  width: 80vw !important;
+  align-self: center;
+  padding-top: 4vh;
 }
