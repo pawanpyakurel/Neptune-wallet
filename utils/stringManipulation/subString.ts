@@ -7,8 +7,6 @@ export const textEclipseCenter = ({
   text = '',
   minLength = 0,
 }: TextEclipseCenterProps) => {
-  console.log(text);
-
   const textLength = !!text && text?.length;
   if (textLength < minLength || !textLength) {
     return text;

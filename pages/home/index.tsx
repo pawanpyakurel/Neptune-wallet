@@ -2,7 +2,6 @@ import { TextField } from 'components/Input/TextField';
 import React, { useCallback, useMemo, useState } from 'react';
 import exchange from 'static/_mock/nepExchangeRate.json';
 import styles from 'pages/home/Home.module.css';
-import Link from 'next/link';
 import { Wallet } from 'Container/Wallet/Wallet';
 
 type Props = {};
