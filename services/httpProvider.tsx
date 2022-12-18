@@ -15,7 +15,7 @@ export const httpProvider = new Web3(
 let balance: any = '';
 let blockNo: any = '';
 
-export const web3 = ({ connected, account }: web3Props) => {
+export const web3 = async ({ connected, account }: web3Props) => {
   const getBalance = async () =>
     await httpProvider.eth.getBalance(account ?? '', function (err, result) {
       if (err) {
@@ -34,13 +34,13 @@ export const web3 = ({ connected, account }: web3Props) => {
       }
     });
 
-  connected && getBalance();
-  connected && getBlockNumber();
+  await getBalance();
+  await getBlockNumber();
   return [
     {
       dataKey: 'balance',
       value: balance,
     },
-    { valueKey: 'block no', data: blockNo },
+    { dataKey: 'block no', value: blockNo },
   ];
 };
