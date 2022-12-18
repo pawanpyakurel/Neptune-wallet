@@ -9,3 +9,7 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+screen shots
+
+<img src="/Neptune-wallet/assets/employee.png" alt="Employee data" title="Employee Data title">
