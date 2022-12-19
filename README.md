@@ -8,12 +8,16 @@ npm run dev
 yarn dev
 ```
 
+### screen shoots
+
+<img src="/assets/converter.md.png" alt="Screen shoot 1" title="Converter screen">
+
 ## Examples
 
 ### 1. Currency Converter
 
-<img src="/assets/currency_converter.md.gif" />
+<img src="/assets/currency_converter.md.gif"  alt = "Currency converter" title= "Currency converter"/>
 
-### screen shoots
+### 2. Wallet Connect
 
-<img src="/assets/converter.md.png" alt="Screen shoot 1" title="Converter screen">
+<img src="/assets/wallet_connect.md.gif" alt = "Wallet connect" title= "Wallet connect"/>
