@@ -10,7 +10,7 @@
     "lint": "next lint",
     "export": "next export",
     "fdeploy": "next build && firebase deploy --only hosting,functions:nextServer2",
-    "dhosting": "next build && firebase deploy --only hosting"
+    "dhosting": "NODE_ENV=production firebase deploy --only hosting"
   },
   "dependencies": {
     "@types/node": "18.11.15",

@@ -3,12 +3,7 @@ import { Button } from 'components/Button/Button';
 import { Modal } from 'components/Modal/Modal';
 import { PopUp } from 'components/Popup/Popup';
 import { Table } from 'components/Table/Table';
-import React, {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useState,
-} from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { injected } from 'services/connectors';
 import { web3 } from 'services/httpProvider';
 import { GLOBAL_CONSTANT } from 'static/constants/GlobalConstant';
@@ -110,7 +105,7 @@ export const Wallet = ({}: WalletProps) => {
     }
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     openDetails && tableData();
   }, [openDetails]);
 
