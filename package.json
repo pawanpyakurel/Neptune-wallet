@@ -2,11 +2,15 @@
   "name": "neptune-test",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "fdeploy": "next build && firebase deploy --only hosting,functions:nextServer2",
+    "dhosting": "next build && firebase deploy --only hosting"
   },
   "dependencies": {
     "@types/node": "18.11.15",
