@@ -8,8 +8,11 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Examples
 
-## screen shoots
+### 1. Currency Converter
+<img src="currency_converter.md.gif" />
+
+### screen shoots
 
 <img src="/assets/converter.md.png" alt="Screen shoot 1" title="Converter screen">
