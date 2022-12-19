@@ -16,4 +16,9 @@ export const GLOBAL_CONSTANT = {
     { dataKey: 'block no', value: '' },
   ],
   CONNECT_MESSAGE: `Wallet is not Connected. Plese Press <b>'Connect'</b> button below.`,
+  TAB_TITLE: 'Neptune - Test App',
+  META: {
+    name: 'Neptune',
+    content: 'Test App - By Pawan',
+  },
 };
