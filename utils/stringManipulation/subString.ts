@@ -13,7 +13,7 @@ export const textEclipseCenter = ({
   }
   const firstFour = !!text && text?.substring(0, 5);
 
-  const lastFour = !!text && text?.substring(textLength - 5, textLength);
+  const lastFour = !!text && text?.substring(textLength - 4, textLength);
 
   return `${firstFour}........${lastFour}`;
 };
