@@ -11,7 +11,8 @@ yarn dev
 ## Examples
 
 ### 1. Currency Converter
-<img src="currency_converter.md.gif" />
+
+<img src="/assets/currency_converter.md.gif" />
 
 ### screen shoots
 
